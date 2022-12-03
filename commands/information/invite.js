@@ -10,7 +10,7 @@ module.exports = {
 
     const inviteEmbed = new Discord.MessageEmbed()
       .setTitle(`Invite ${client.user.username}`)
-      .setDescription(`Want to invite ${client.user.username}? Click [__here__](https://discord.com/api/oauth2/authorize?client_id=868297144480710756&permissions=8&scope=bot)`)
+      .setDescription(`Want to invite ${client.user.username}? Click [__here__](https://discord.gg/jSSXbDvZwV)`)
       .setColor(color)
       .setFooter(`Default Prefix: , | Customizable`, message.author.displayAvatarURL({
         dynamic: true

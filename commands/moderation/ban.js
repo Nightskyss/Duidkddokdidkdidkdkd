@@ -28,16 +28,16 @@ module.exports = {
       .addField('**Aliases**', 'N/A', true)
       .addField('**Parameters**', 'member, reason', true)
       .addField('**Information**', `${warn} Ban Members`, true)
-      .addField('**Usage**', '\`\`\`Syntax: ban (member) <reason>\nExample: ban four#0001 Threatening members\`\`\`')
+      .addField('**Usage**', '\`\`\`Syntax: ban (member) <reason>\nExample: ban forced#0001 Threatening members\`\`\`')
       .setFooter(`Module: moderation`)
       .setTimestamp()
       .setColor(color)
     if (!args[0]) return message.channel.send(embed)
     if (mentionedMember.id == message.author.id) return message.channel.send({ embed: { color: "fe6464", description: `${deny} ${message.author}: You cannot ban **yourself**` } })
-    if (message.member.roles.highest.comparePositionTo(mentionedMember.roles.highest) >= 0) return message.channel.send({ embed: { color: "fe6464", description: `${deny} ${message.author}: You cannot ban someone that is **higher** than **yours**` } })
+
     if (!mentionedMember) return message.channel.send({ embed: { color: "#efa23a", description: `${warn} ${message.author}: **Invalid User**. Do \`${prefix}ban\` to see the variables` } })
     if (!mentionedMember.bannable) return message.channel.send({ embed: { color: "#efa23a", description: `${warn} ${message.author}: Cannot ban due to **hierarchy**` } })
-    if (message.member.roles.highest.comparePositionTo(mentionedMember.roles.highest) >= 0) return message.channel.send({ embed: { color: "fe6464", description: `${deny} ${message.author}: You cannot ban someone that is **higher** than **yours**` } })
+            if (message.member.roles.highest.comparePositionTo(mentionedMember.roles.highest) >= 0) return message.channel.send({ embed: { color: "fe6464", description: `${deny} ${message.author}: You cannot ban someone that is **higher** than **yours**` } })
 
 
     const banEmbed = new Discord.MessageEmbed()

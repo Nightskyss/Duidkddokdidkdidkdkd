@@ -61,7 +61,7 @@ module.exports = {
     const embed = new Discord.MessageEmbed()
       .setColor(color)
       .setAuthor(`${client.user.username}`, client.user.displayAvatarURL())
-      .setDescription(`Bot statistics, developed by four#0001\n**Memory:** ${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)}MB, **Commands:** ${client.commands.size}`)
+      .setDescription(`Bot statistics, developed by sinn x tess x korzak\n**Memory:** ${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)}MB, **Commands:** ${client.commands.size}`)
       .addField('**Members**', `${client.guilds.cache.reduce((current, guild) => current + guild.memberCount, 0).toLocaleString()} total\n${uniqueIDs.size.toLocaleString()} unique\n${uniqueOnlineIDs.size.toLocaleString()} unique online`, true)
       .addField('**Channels**', `${client.channels.cache.size.toLocaleString()} total\n${client.channels.cache.filter(channel => channel.type == 'text').size.toLocaleString()} text\n${client.channels.cache.filter(channel => channel.type == 'voice').size.toLocaleString()} voice`, true)
       .addField('**Guilds**', `${client.guilds.cache.size.toLocaleString()} (public)`, true)

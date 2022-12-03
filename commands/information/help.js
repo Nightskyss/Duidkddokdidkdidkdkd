@@ -18,8 +18,8 @@ module.exports = {
       .setAuthor(`${client.user.username} help`, client.user.displayAvatarURL())
       .setTitle('Launch Pad')
       .setDescription(`To get information on a command, invite ${client.user.username} to your server and run \`${prefix}[command]\`\nTo navigate through pages use the :arrow_left: or :arrow_right: arrow`)
-      .addField(`**Want ${client.user.username} in your server?**`, `Invite ${client.user.username} [__here__](https://discord.com/api/oauth2/authorize?client_id=868297144480710756&permissions=8&scope=bot)`)
-      .addField('**:newspaper: Latest News - July 23rd 2021**', 'lol four more like poor xd ! rofl.')
+      .addField(`**Want ${client.user.username} in your server?**`, `Invite ${client.user.username} [__here__](https://discord.gg/xEZme6XwQe)`)
+      .addField('**:newspaper: Latest News - November of 2022**', 'New Bot Avaible')
 
     const page2 = new Discord.MessageEmbed()
       .setColor(color)
@@ -46,7 +46,7 @@ module.exports = {
       .setColor(color)
       .setThumbnail(client.user.displayAvatarURL({ format: "png", dynamic: true, size: 2048 }))
       .setAuthor(`${client.user.username} help`, client.user.displayAvatarURL())
-      .setTitle('**Last.fm Commands**')
+      .setTitle('Last.fm Commands**')
       .setDescription(`${prefix}lastfm set - connect your Last.fm account\n${prefix}lastfm unlink - disconenct your Last.fm account\n${prefix}fm/np - shows your current song playing from Last.fm`)
 
     const page6 = new Discord.MessageEmbed()
@@ -73,7 +73,7 @@ module.exports = {
       page7
     ]
 
-    const emoji = ["⬅️", "➡️"]
+    const emoji =  ["⬅️", "➡️"] 
 
     const timeout = '47000'
 

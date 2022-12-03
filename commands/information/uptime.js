@@ -41,7 +41,7 @@ module.exports = {
 
     const embed = new Discord.MessageEmbed()
     .setColor(color)
-    .setDescription(`:alarm_clock: **bleed** has been up for: ${UptimeDays}${UptimeHours}${UptimeMinutes}${UptimeSeconds}`)
+    .setDescription(`:alarm_clock: **clear** has been up for: ${UptimeDays}${UptimeHours}${UptimeMinutes}${UptimeSeconds}`)
 
     message.channel.send(embed)
   }
